@@ -14,7 +14,6 @@ La aplicación ofrecerá una interfaz fácil de usar para crear reportes de inci
 
 El sistema tiene como objetivo mejorar la eficacia en la gestión de incidencias, centralizar la información y generar reportes que permitan analizar patrones, tiempos de respuesta y áreas de oportunidad en el servicio de soporte técnico. También se busca optimizar la comunicación entre los usuarios que reportan los problemas y los técnicos encargados de su resolución, lo que resultará en una atención más ágil y en una administración más eficiente de los recursos tecnológicos de la organización. 📈
 
-
 ## :mag_right: Tecnologías Usadas
 
 - *Workflow*
