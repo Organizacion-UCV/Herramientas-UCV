@@ -79,7 +79,7 @@ El sistema tiene como objetivo mejorar la eficacia en la gestión de incidencias
 ---
 
 ## :clipboard: Roles y Funciones del equipo
-| ID  | Nombre del Rol       | Encargado 💡      | Función  📏                                                                 |
+| ID  | Nombre del Rol 👨‍💻      | Encargado 💡      | Función  📏                                                                 |
 |-----|----------------------|--------------------|-------------------------------------------------------------------------|
 | R1  | Programador Backend   | [Fernández Valenzuela, Jeffri Mathias]         | Encargado de la lógica de negocio, bases de datos y APIs.               |
 | R2  | Programador Frontend  | [Morales Dominguez, Jans Snider]         | Encargado del diseño y desarrollo de la interfaz de usuario (UI).      |
