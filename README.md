@@ -14,9 +14,10 @@ La aplicación ofrecerá una interfaz fácil de usar para crear reportes de inci
 
 El sistema tiene como objetivo mejorar la eficacia en la gestión de incidencias, centralizar la información y generar reportes que permitan analizar patrones, tiempos de respuesta y áreas de oportunidad en el servicio de soporte técnico. También se busca optimizar la comunicación entre los usuarios que reportan los problemas y los técnicos encargados de su resolución, lo que resultará en una atención más ágil y en una administración más eficiente de los recursos tecnológicos de la organización. 📈
 
-
 ## :mag_right: Tecnologías Usadas
 
+- *Workflow*
+    - GitHub
 - *Backend*:
     - Spring Boot
     - Maven
@@ -34,7 +35,6 @@ El sistema tiene como objetivo mejorar la eficacia en la gestión de incidencias
             - react-dom
             - react-scripts
             - web-vitals
-
 - *Base de datos*:
     - MySQL
 
@@ -79,7 +79,7 @@ El sistema tiene como objetivo mejorar la eficacia en la gestión de incidencias
 ---
 
 ## :clipboard: Roles y Funciones del equipo
-| ID  | Nombre del Rol       | Encargado 💡      | Función  📏                                                                 |
+| ID  | Nombre del Rol 👨‍💻     | Encargado 💡      | Función  📏                                                                 |
 |-----|----------------------|--------------------|-------------------------------------------------------------------------|
 | R1  | Programador Backend   | [Fernández Valenzuela, Jeffri Mathias]         | Encargado de la lógica de negocio, bases de datos y APIs.               |
 | R2  | Programador Frontend  | [Morales Dominguez, Jans Snider]         | Encargado del diseño y desarrollo de la interfaz de usuario (UI).      |
