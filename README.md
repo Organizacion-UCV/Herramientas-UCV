@@ -36,7 +36,6 @@ El sistema tiene como objetivo mejorar la eficacia en la gestión de incidencias
             - react-dom
             - react-scripts
             - web-vitals
-
 - *Base de datos*:
     - MySQL
 
