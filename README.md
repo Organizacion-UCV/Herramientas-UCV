@@ -12,7 +12,7 @@ Este proyecto tiene como propósito el desarrollo de una plataforma web que perm
 
 La aplicación ofrecerá una interfaz fácil de usar para crear reportes de incidencias, asignar tareas a los responsables de su atención, seguir el avance de la solución y, al final, generar informes detallados sobre el proceso de resolución, las acciones realizadas y los tiempos de intervención.
 
-El sistema tiene como objetivo mejorar la eficacia en la gestión de incidencias, centralizar la información y generar reportes que permitan analizar patrones, tiempos de respuesta y áreas de oportunidad en el servicio de soporte técnico. También se busca optimizar la comunicación entre los usuarios que reportan los problemas y los técnicos encargados de su resolución, lo que resultará en una atención más ágil y en una administración más eficiente de los recursos tecnológicos de la organización. 📈
+El sistema tiene como objetivo mejorar la eficacia en la gestión de incidencias, centralizar la información y generar reportes que permitan analizar patrones, tiempos de respuesta y las áreas de oportunidad en el servicio de soporte técnico. También se busca optimizar la comunicación entre los usuarios que reportan los problemas y los técnicos encargados de su resolución, lo que resultará en una atención más ágil y en una administración más eficiente de los recursos tecnológicos de la organización. 📈
 
 ## :mag_right: Tecnologías Usadas
 
