@@ -8,11 +8,11 @@
 ---
 ## 📜 Descripción general del proyecto
 
-Este proyecto tiene como propósito el desarrollo de una plataforma web que permita gestionar y hacer un seguimiento de las incidencias informáticas dentro de una organización. A través de esta aplicación, los usuarios podrán registrar y reportar los problemas técnicos que surjan en los sistemas, equipos o servicios informáticos, mientras que los técnicos podrán darles seguimiento hasta su resolución.
+Este proyecto tiene como propósito el desarrollo de una plataforma web que permita gestionar y realizar un seguimiento de las incidencias informáticas dentro de una organización. A través de esta aplicación, los usuarios podrán registrar y reportar los problemas técnicos que surjan en los sistemas, equipos o servicios informáticos, mientras que los técnicos podrán darles seguimiento hasta su resolución.
 
-La aplicación ofrecerá una interfaz fácil de usar para crear reportes de incidencias, asignar tareas a los responsables de su atención, seguir el avance de la solución y, al final, generar informes detallados sobre el proceso de resolución, las acciones realizadas y los tiempos de intervención.
+La aplicación ofrecerá una interfaz amigable de utilizar para crear reportes de incidencias, asignar tareas a los responsables de su atención, seguir el avance de la solución y, al final, generar informes detallados sobre el proceso de resolución, las acciones realizadas y los tiempos de intervención.
 
-El sistema tiene como objetivo mejorar la eficacia en la gestión de incidencias, centralizar la información y generar reportes que permitan analizar patrones, tiempos de respuesta y áreas de oportunidad en el servicio de soporte técnico. También se busca optimizar la comunicación entre los usuarios que reportan los problemas y los técnicos encargados de su resolución, lo que resultará en una atención más ágil y en una administración más eficiente de los recursos tecnológicos de la organización. 📈
+El sistema tiene como objetivo mejorar la eficacia en la gestión de incidencias, centralizar la información y generar reportes que permitan analizar patrones, tiempos de respuesta y las áreas de oportunidad en el servicio de soporte técnico. También se busca optimizar la comunicación entre los usuarios que reportan los problemas y los técnicos encargados de su resolución, lo que resultará en una atención más ágil y en una administración más eficiente de los recursos tecnológicos de la organización. 📈
 
 ## :mag_right: Tecnologías Usadas
 
