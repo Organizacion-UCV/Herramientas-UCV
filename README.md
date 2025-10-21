@@ -17,6 +17,8 @@ El sistema tiene como objetivo mejorar la eficacia en la gestión de incidencias
 
 ## :mag_right: Tecnologías Usadas
 
+- *Workflow*
+    - GitHub
 - *Backend*:
     - Spring Boot
     - Maven
