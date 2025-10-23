@@ -161,3 +161,21 @@ Este documento explica los pasos básicos para trabajar con **Git** y **GitHub**
 ---
 ## 🔹 7. SOLUCIÓN DE CONFLICTO 
 ![Flujo de trabajo en Git](IMAGENES/6.png)
+---
+## 🔹 8. ISSUES Y LABELS
+![Flujo de trabajo en Git](IMAGENES/7.jpeg)
+---
+## 🔹 9. CERRANDO ISSUES 
+![Flujo de trabajo en Git](IMAGENES/8.png)
+---
+## 🔹 10. TABLERO PROJECT
+![Flujo de trabajo en Git](IMAGENES/9.png)
+---
+## 🔹 11. FORK CREADO
+![Flujo de trabajo en Git](IMAGENES/10.png)
+---
+## 🔹 12. MILESTONES
+![Flujo de trabajo en Git](IMAGENES/11.png)
+---
+## 🔹 13. PULL REQUEST ACEPTADO
+![Flujo de trabajo en Git](IMAGENES/12.png)
