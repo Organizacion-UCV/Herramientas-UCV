@@ -6,6 +6,11 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/ucvfrontend/"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Organizacion-UCV/Herramientas-UCV.git"
