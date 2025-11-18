@@ -13,7 +13,7 @@ import {
 import './DashboardLayout.css';
 import ucvLogo from '../../assets/logoCompleto.png';
 import defaultUser from '../../assets/logousuario.png';
-import ChatbotUCV from '../../components/Chatbot/Chatbot'; // <-- ajusta esta ruta
+import ChatbotUCV from '../Chatbot/Chatbot'; // <-- ajusta esta ruta
 import { driver } from "driver.js";
 import "driver.js/dist/driver.css";
 
