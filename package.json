@@ -1,0 +1,23 @@
+{
+  "name": "herramientas-ucv",
+  "version": "1.0.0",
+  "description": "![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)\r ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)\r ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)\r ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)\r ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)\r ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)\r ---\r ## 📜 Descripción general del proyecto",
+  "main": "usuario.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Organizacion-UCV/Herramientas-UCV.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Organizacion-UCV/Herramientas-UCV/issues"
+  },
+  "homepage": "https://github.com/Organizacion-UCV/Herramientas-UCV#readme",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
