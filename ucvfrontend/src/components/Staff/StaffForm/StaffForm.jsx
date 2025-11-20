@@ -76,7 +76,7 @@ const StaffForm = ({ onStaffAdded }) => {
         }
         try {
             await axios.post(
-                "http://localhost:8080/api/ucv/register",
+                "https://herramientas-ucv-19.onrender.com/api/ucv/register",
                 StaffData,
                 {
                     headers: {
@@ -134,7 +134,7 @@ const StaffForm = ({ onStaffAdded }) => {
         }
         try {
             const res = await axios.get(
-                `http://localhost:8080/api/ucv/staffList`,
+                `https://herramientas-ucv-19.onrender.com/api/ucv/staffList`,
                 { headers: getAuthHeader() }
             );
             // Buscar el usuario por ID en la lista (puedes cambiar a un endpoint específico si existe)
@@ -163,7 +163,7 @@ const StaffForm = ({ onStaffAdded }) => {
         }
         try {
             const res = await axios.get(
-                "http://localhost:8080/api/ucv/staffList",
+                "https://herramientas-ucv-19.onrender.com/api/ucv/staffList",
                 { headers: getAuthHeader() }
             );
             const user = res.data.find(u => String(u.id) === String(updateModalId));
@@ -205,7 +205,7 @@ const StaffForm = ({ onStaffAdded }) => {
         };
         try {
             await axios.put(
-                `http://localhost:8080/api/ucv/staffUpdate/${updateId}`,
+                `https://herramientas-ucv-19.onrender.com/api/ucv/staffUpdate/${updateId}`,
                 StaffData,
                 {
                     headers: {
@@ -237,7 +237,7 @@ const StaffForm = ({ onStaffAdded }) => {
         }
         try {
             const res = await axios.get(
-                `http://localhost:8080/api/ucv/staffList`,
+                `https://herramientas-ucv-19.onrender.com/api/ucv/staffList`,
                 { headers: getAuthHeader() }
             );
             const user = res.data.find(u => String(u.id) === String(delateId));
@@ -264,7 +264,7 @@ const StaffForm = ({ onStaffAdded }) => {
         }
         try {
             await axios.delete(
-                `http://localhost:8080/api/ucv/staffDelete/${delateId}`,
+                `https://herramientas-ucv-19.onrender.com/api/ucv/staffDelete/${delateId}`,
                 { headers: getAuthHeader() }
             );
             toast.success("Usuario eliminado correctamente.", { duration: 3000 });
@@ -281,7 +281,7 @@ const StaffForm = ({ onStaffAdded }) => {
     const handleExcelExport = async () => {
         try {
             const response = await axios.post(
-                'http://localhost:8080/api/ucv/staffExcel',
+                'https://herramientas-ucv-19.onrender.com/api/ucv/staffExcel',
                 {}, // cuerpo vacío
                 {
                     responseType: 'blob',
@@ -306,7 +306,7 @@ const StaffForm = ({ onStaffAdded }) => {
     const handlePdfExport = async () => {
         try {
             const response = await axios.post(
-                'http://localhost:8080/api/ucv/staffPDF',
+                'https://herramientas-ucv-19.onrender.com/api/ucv/staffPDF',
                 {}, // cuerpo vacío
                 {
                     responseType: 'blob',

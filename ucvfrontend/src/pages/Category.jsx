@@ -10,7 +10,7 @@ const Category = () => {
 
   const fetchCategoryList = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/api/ucv/categoryList",
+      const response = await axios.get("https://herramientas-ucv-19.onrender.com/api/ucv/categoryList",
         {
           headers: getAuthHeader(),
         }

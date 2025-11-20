@@ -47,7 +47,7 @@ function CategoryForm({ onCategoryChanged }) {
         if (!validateFields()) return;
         const data = { type, prioritylevel, category, description };
         try {
-            await axios.post("http://localhost:8080/api/ucv/categorySave", data, {
+            await axios.post("https://herramientas-ucv-19.onrender.com/api/ucv/categorySave", data, {
                 headers: { "Content-Type": "application/json", ...getAuthHeader() }
             });
             clearFormFields();
@@ -66,7 +66,7 @@ function CategoryForm({ onCategoryChanged }) {
             return;
         }
         try {
-            const res = await axios.get("http://localhost:8080/api/ucv/categoryList",
+            const res = await axios.get("https://herramientas-ucv-19.onrender.com/api/ucv/categoryList",
                 {
                     headers: getAuthHeader()
                 }
@@ -92,7 +92,7 @@ function CategoryForm({ onCategoryChanged }) {
             return;
         }
         try {
-            const res = await axios.get("http://localhost:8080/api/ucv/categoryList",
+            const res = await axios.get("https://herramientas-ucv-19.onrender.com/api/ucv/categoryList",
                 {
                     headers: getAuthHeader()
                 }
@@ -124,7 +124,7 @@ function CategoryForm({ onCategoryChanged }) {
         if (!validateFields()) return;
         const data = { type, prioritylevel, category, description };
         try {
-            await axios.put(`http://localhost:8080/api/ucv/categoryUpdate/${updateId}`, data, {
+            await axios.put(`https://herramientas-ucv-19.onrender.com/api/ucv/categoryUpdate/${updateId}`, data, {
                 headers: { "Content-Type": "application/json", ...getAuthHeader() }
             });
             toast.success("Categoría actualizada correctamente.", { duration: 3000 });
@@ -144,7 +144,7 @@ function CategoryForm({ onCategoryChanged }) {
             return;
         }
         try {
-            const res = await axios.get("http://localhost:8080/api/ucv/categoryList", {
+            const res = await axios.get("https://herramientas-ucv-19.onrender.com/api/ucv/categoryList", {
                 headers: getAuthHeader()
             });
             const cat = res.data.find(c => String(c.id) === String(deleteId));
@@ -168,7 +168,7 @@ function CategoryForm({ onCategoryChanged }) {
             return;
         }
         try {
-            await axios.delete(`http://localhost:8080/api/ucv/categoryDelete/${deleteId}`, {
+            await axios.delete(`https://herramientas-ucv-19.onrender.com/api/ucv/categoryDelete/${deleteId}`, {
                 headers: getAuthHeader()
             });
             setDeleteId(""); setDeleteResult(null);
@@ -181,7 +181,7 @@ function CategoryForm({ onCategoryChanged }) {
 
     const handleExcelExport = async () => {
         try {
-            axios.post('http://localhost:8080/api/ucv/categoryExcel', {}, {
+            axios.post('https://herramientas-ucv-19.onrender.com/api/ucv/categoryExcel', {}, {
                 headers: getAuthHeader(),
                 responseType: 'blob',
             }, {
@@ -208,7 +208,7 @@ function CategoryForm({ onCategoryChanged }) {
 
     const handlePdfExport = async () => {
         try {
-            const response = await axios.post('http://localhost:8080/api/ucv/categoryPDF', {}, {
+            const response = await axios.post('https://herramientas-ucv-19.onrender.com/api/ucv/categoryPDF', {}, {
                 headers: getAuthHeader(),
                 responseType: 'blob',
             });

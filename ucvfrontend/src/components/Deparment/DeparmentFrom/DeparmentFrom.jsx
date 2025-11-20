@@ -82,7 +82,7 @@ function DeparmentFrom({ onDeparmentChanged }) {
     const data = { registeredUser, name, tower, floor, classroom, registeredDate: dateTime, code };
     try {
       await axios.post(
-        "http://localhost:8080/api/ucv/deparmentSave",
+        "https://herramientas-ucv-19.onrender.com/api/ucv/deparmentSave",
         data,
         {
           headers: {
@@ -108,7 +108,7 @@ function DeparmentFrom({ onDeparmentChanged }) {
     }
     try {
       const res = await axios.get(
-        "http://localhost:8080/api/ucv/deparmentList",
+        "https://herramientas-ucv-19.onrender.com/api/ucv/deparmentList",
         { headers: getAuthHeader() }
       );
       const dep = res.data.find(d => String(d.id) === String(consultId));
@@ -131,7 +131,7 @@ function DeparmentFrom({ onDeparmentChanged }) {
     }
     try {
       const res = await axios.get(
-        "http://localhost:8080/api/ucv/deparmentList",
+        "https://herramientas-ucv-19.onrender.com/api/ucv/deparmentList",
         { headers: getAuthHeader() }
       );
       const dep = res.data.find(d => String(d.id) === String(updateModalId));
@@ -167,7 +167,7 @@ function DeparmentFrom({ onDeparmentChanged }) {
     const data = { registeredUser, name, tower, floor, classroom, registeredDate: dateTime, code };
     try {
       await axios.put(
-        `http://localhost:8080/api/ucv/deparmentUpdate/${updateId}`,
+        `https://herramientas-ucv-19.onrender.com/api/ucv/deparmentUpdate/${updateId}`,
         data,
         {
           headers: {
@@ -194,7 +194,7 @@ function DeparmentFrom({ onDeparmentChanged }) {
     }
     try {
       const res = await axios.get(
-        "http://localhost:8080/api/ucv/deparmentList",
+        "https://herramientas-ucv-19.onrender.com/api/ucv/deparmentList",
         { headers: getAuthHeader() }
       );
       const dep = res.data.find(d => String(d.id) === String(deleteId));
@@ -219,7 +219,7 @@ function DeparmentFrom({ onDeparmentChanged }) {
     }
     try {
       await axios.delete(
-        `http://localhost:8080/api/ucv/deparmentDelate/${deleteId}`,
+        `https://herramientas-ucv-19.onrender.com/api/ucv/deparmentDelate/${deleteId}`,
         { headers: getAuthHeader() }
       );
       setDeleteId(""); setDeleteResult(null);
@@ -248,7 +248,7 @@ function DeparmentFrom({ onDeparmentChanged }) {
   const handleExcelExport = async () => {
     try {
       axios.post(
-        'http://localhost:8080/api/ucv/deparmentExcel',
+        'https://herramientas-ucv-19.onrender.com/api/ucv/deparmentExcel',
         {},
         {
           responseType: 'blob',
@@ -277,7 +277,7 @@ function DeparmentFrom({ onDeparmentChanged }) {
   const handlePdfExport = async () => {
     try {
       axios.post(
-        'http://localhost:8080/api/ucv/deparmentPDF',
+        'https://herramientas-ucv-19.onrender.com/api/ucv/deparmentPDF',
         {},
         {
           responseType: 'blob',

@@ -3,7 +3,7 @@ import { getAuthHeader } from '../../Utils/Auth';
 
 export const getAllAssign = async () => {
     try {
-        const response = await axios.get(`http://localhost:8080/api/ucv/assignStaffList`, {
+        const response = await axios.get(`https://herramientas-ucv-19.onrender.com/api/ucv/assignStaffList`, {
             headers: {
                 'Content-Type': 'application/json',
                 ...getAuthHeader()
@@ -17,7 +17,7 @@ export const getAllAssign = async () => {
 
 export const saveReport = async (data) => {
     try {
-        const respone = await axios.post(`http://localhost:8080/api/ucv/saveReport`,data, {
+        const respone = await axios.post(`https://herramientas-ucv-19.onrender.com/api/ucv/saveReport`,data, {
             headers: {
                 'Content-Type': 'application/json',
                 ...getAuthHeader()
@@ -31,7 +31,7 @@ export const saveReport = async (data) => {
 
 export const getReportId = async (id) => {
     try {
-        const response = await axios.get(`http://localhost:8080/api/ucv/getAllReport`, {
+        const response = await axios.get(`https://herramientas-ucv-19.onrender.com/api/ucv/getAllReport`, {
             headers: {
                 'Content-Type': 'application/json',
                 ...getAuthHeader()
@@ -45,7 +45,7 @@ export const getReportId = async (id) => {
 
 export const updateReport = async (id, data) => {
     try {
-        const response = await axios.put(`http://localhost:8080/api/ucv/updateReport/${id}`, data, {
+        const response = await axios.put(`https://herramientas-ucv-19.onrender.com/api/ucv/updateReport/${id}`, data, {
             headers: {
                 'Content-Type': 'application/json',
                 ...getAuthHeader()
@@ -59,7 +59,7 @@ export const updateReport = async (id, data) => {
 
 export const delateReport = async (id) => {
     try {
-        const response = await axios.delete(`http://localhost:8080/api/ucv/deleteReport/${id}`, {
+        const response = await axios.delete(`https://herramientas-ucv-19.onrender.com/api/ucv/deleteReport/${id}`, {
             headers: {
                 'Content-Type': 'application/json',
                 ...getAuthHeader()
@@ -74,7 +74,7 @@ export const delateReport = async (id) => {
 export const excelDownload = async () => {
   try {
     console.log(getAuthHeader()); // Verifica el token aquí
-    const response = await axios.post("http://localhost:8080/api/ucv/reportExcel", {},{
+    const response = await axios.post("https://herramientas-ucv-19.onrender.com/api/ucv/reportExcel", {},{
       headers: getAuthHeader(),
       responseType: 'blob',
     });
@@ -86,7 +86,7 @@ export const excelDownload = async () => {
 
 export const pdfDownload = async () => {
   try {
-    const response = await axios.post("http://localhost:8080/api/ucv/reportPDF", {},{
+    const response = await axios.post("https://herramientas-ucv-19.onrender.com/api/ucv/reportPDF", {},{
       headers: getAuthHeader(),
       responseType: 'blob',
     });

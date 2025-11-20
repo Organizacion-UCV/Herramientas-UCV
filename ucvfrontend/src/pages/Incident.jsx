@@ -19,7 +19,7 @@ const Incident = () => {
     const userId = payload.userId;
     try {
 
-      const respone = await axios.get(`http://localhost:8080/api/ucv/getIncidentsByUserId/${userId}`, {
+      const respone = await axios.get(`https://herramientas-ucv-19.onrender.com/api/ucv/getIncidentsByUserId/${userId}`, {
         headers: getAuthHeader(),
       });
       setIncidentList(respone.data);

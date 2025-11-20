@@ -3,7 +3,7 @@ import { getAuthHeader } from '../../Utils/Auth';
 
 export const getAllDeparments = async () => {
   try {
-    const response = await axios.get("http://localhost:8080/api/ucv/deparmentList", {
+    const response = await axios.get("https://herramientas-ucv-19.onrender.com/api/ucv/deparmentList", {
       headers: getAuthHeader(),
     });
     console.log("Departamentos recibidos:", response.data);
@@ -17,7 +17,7 @@ export const getAllDeparments = async () => {
 
 export const getAllCategories = async () => {
   try {
-    const response = await axios.get("http://localhost:8080/api/ucv/categoryList", {
+    const response = await axios.get("https://herramientas-ucv-19.onrender.com/api/ucv/categoryList", {
       headers: getAuthHeader(),
     });
     console.log("Categorías recibidas:", response.data);
@@ -32,7 +32,7 @@ export const getAllCategories = async () => {
 
 export const registerIncident = async (incidentData) => {
   try {
-    const response = await axios.post("http://localhost:8080/api/ucv/createIncident", incidentData, {
+    const response = await axios.post("https://herramientas-ucv-19.onrender.com/api/ucv/createIncident", incidentData, {
       headers: getAuthHeader(),
     });
     return response.data;
@@ -44,7 +44,7 @@ export const registerIncident = async (incidentData) => {
 
 // Consultar por ID
 export const getIncidentById = async (id) => {
-  const response = await axios.get(`http://localhost:8080/api/ucv/getAllIncidents`, {
+  const response = await axios.get(`https://herramientas-ucv-19.onrender.com/api/ucv/getAllIncidents`, {
     headers: getAuthHeader(),
   });
   return response.data.find(incident => String(incident.id) === String(id));
@@ -52,7 +52,7 @@ export const getIncidentById = async (id) => {
 
 // Actualizar incidencia
 export const updateIncident = async (id, data) => {
-  await axios.put(`http://localhost:8080/api/ucv/incidentUpdate/${id}`, data, {
+  await axios.put(`https://herramientas-ucv-19.onrender.com/api/ucv/incidentUpdate/${id}`, data, {
     headers: {
       'Content-Type': 'application/json',
       ...getAuthHeader(),
@@ -62,14 +62,14 @@ export const updateIncident = async (id, data) => {
 
 // Eliminar incidencia
 export const deleteIncident = async (id) => {
-  await axios.delete(`http://localhost:8080/api/ucv/incidentDelete/${id}`, {
+  await axios.delete(`https://herramientas-ucv-19.onrender.com/api/ucv/incidentDelete/${id}`, {
     headers: getAuthHeader(),
   });
 };
 
 export const excelDownload = async () => {
   try {
-    const response = await axios.post("http://localhost:8080/api/ucv/incidentExcel", {},{
+    const response = await axios.post("https://herramientas-ucv-19.onrender.com/api/ucv/incidentExcel", {},{
       headers: getAuthHeader(),
       responseType: 'blob',
     });
@@ -81,7 +81,7 @@ export const excelDownload = async () => {
 
 export const pdfDownload = async () => {
   try {
-    const response = await axios.post("http://localhost:8080/api/ucv/incidentPDF", {},{
+    const response = await axios.post("https://herramientas-ucv-19.onrender.com/api/ucv/incidentPDF", {},{
       headers: getAuthHeader(),
       responseType: 'blob',
     });

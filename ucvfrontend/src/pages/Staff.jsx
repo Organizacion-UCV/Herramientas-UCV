@@ -10,7 +10,7 @@ function Staff() {
     const fetchStaffList = async () => {
         try {
             const response = await axios.get(
-                "http://localhost:8080/api/ucv/staffList",
+                "https://herramientas-ucv-19.onrender.com/api/ucv/staffList",
                 {
                     headers: getAuthHeader(),
                 }

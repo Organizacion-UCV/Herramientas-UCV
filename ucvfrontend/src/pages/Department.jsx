@@ -9,7 +9,7 @@ const Department = () => {
 
   const fetchDepartmentList = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/api/ucv/deparmentList",{
+      const response = await axios.get("https://herramientas-ucv-19.onrender.com/api/ucv/deparmentList",{
         headers: getAuthHeader(),
       });
       setDepartmentList(response.data);

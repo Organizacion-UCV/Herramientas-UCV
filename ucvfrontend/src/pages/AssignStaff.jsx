@@ -12,7 +12,7 @@ function AssignStaff() {
 
   const fetchAssign = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/api/ucv/assignStaffList`, {
+      const response = await axios.get(`https://herramientas-ucv-19.onrender.com/api/ucv/assignStaffList`, {
         headers: {
           'Content-Type': 'application/json',
           ...getAuthHeader()

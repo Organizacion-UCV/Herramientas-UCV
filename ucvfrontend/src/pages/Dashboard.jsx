@@ -9,7 +9,7 @@ const Dashboard = () => {
 
   const loadIncidents = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/api/ucv/getAllIncidents', {
+      const response = await axios.get('https://herramientas-ucv-19.onrender.com/api/ucv/getAllIncidents', {
         headers: {
           'Content-Type': 'application/json',
           ...getAuthHeader()
@@ -23,7 +23,7 @@ const Dashboard = () => {
 
   const loadAssignStaff = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/api/ucv/assignStaffList`, {
+      const response = await axios.get(`https://herramientas-ucv-19.onrender.com/api/ucv/assignStaffList`, {
         headers: {
           'Content-Type': 'application/json',
           ...getAuthHeader()
