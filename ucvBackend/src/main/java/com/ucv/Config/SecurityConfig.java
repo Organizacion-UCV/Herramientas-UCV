@@ -49,7 +49,8 @@ public class SecurityConfig {
         new AntPathRequestMatcher("/api/ucv/authenticate"),
         new AntPathRequestMatcher("/api/ucv/register"),
         new AntPathRequestMatcher("/api/ucv/publictest")
-    );            
+    );   
+             
     }
     
 }
