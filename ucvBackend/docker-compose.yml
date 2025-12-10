@@ -1,11 +1,29 @@
+version: '3.8' # O la versión que estés usando
+
 services:
+  # 1. SERVICIO DEL BACKEND DE JAVA
+  ucvbackend:
+    build: . # Esto le dice a Docker Compose que use el Dockerfile en la carpeta actual
+    image: ucvbackend-imagen:latest # La imagen que construiste
+    container_name: ucvbackend-contenedor
+    ports:
+      - "8080:8080" # Mapeo del puerto para el acceso externo
+    # Añadir esto para que Prometheus pueda acceder a tu aplicación:
+    # depends_on:
+    #   - prometheus 
+    # environment:
+    #   - SPRING_PROFILES_ACTIVE=prod 
+    #   (También puedes necesitar la configuración de la base de datos aquí si no está en Spring)
+
+  # 2. SERVICIO PROMETHEUS (ya lo tienes)
   prometheus:
-    image: prom/prometheus:latest    
+    image: prom/prometheus:latest 
     ports:
       - 9090:9090
     volumes:
       - ./config/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
 
+  # 3. SERVICIO GRAFANA (ya lo tienes)
   grafana:
     image: grafana/grafana:latest
     ports:
