@@ -57,7 +57,9 @@ public class AppConfig implements WebMvcConfigurer{
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:3000", "https://herramientas-ucv-22.onrender.com")
+                .allowedOrigins( "http://localhost:3000",
+                "https://herramientas-ucv-22.onrender.com",   // tu frontend Render
+                "https://*.onrender.com"         )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .exposedHeaders("*")
